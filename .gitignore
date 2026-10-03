@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+memory.db
+*.db-journal
+web/node_modules/
+.DS_Store
+memory_system.py.backup
+memory_system.py.backup2
+.cursor/
