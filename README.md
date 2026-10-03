@@ -265,14 +265,4 @@ python score_memory.py \
 | — | **No** HuggingFace/SentenceTransformers / LangChain — avoided to keep hidden-harness zero-pip risk | ₹0 |
 | *(Optional, user-installed)* `faster-whisper`, `sounddevice`, `pywin32` | Local mic + ASR if a user wants offline voice | ₹0 |
 
-**Total tool + model spend: ₹0.**
-
-## Submission checklist (BRIEF §What to send)
-
-- [x] **Output files on train sets** — `outputs/memory_train_answers.jsonl` (27 questions, 100% retrieval + 100% strict/lenient, 0 unverified, 0 hard failures) · `outputs/actions_train_predictions.jsonl` (12 commands, 100% type pass rate, 100% arg accuracy).
-- [x] **One command to run everything** — `pip install -r requirements.txt && python run.py --eval` (rebuilds DB, runs all three harness evals, writes outputs, opens UI).
-- [x] **README.md** — architecture (above), key decisions + why, what didn't work / known limits, how to run, eval results, tools/models used.
-- [x] **Bonus custom action evals** — `evals/actions_custom.jsonl` (8 new varied-phrasing cases; pattern fallback 8/8 PASS).
-- [x] **Bolna AI voice-agent via webhook only** — commands: `python voice.py --print-webhook-url`, `python voice.py --register-webhook`. Status dashboard: `GET /api/voice/bolna/status`.
-- [ ] Public GitHub repo + commit hash — user's git/publish step.
-- [ ] *(Optional, counts toward bonus design)* ≤5-min demo video showing SPA dashboard + memory ask evidence + Bolna /api/voice/bolna/webhook status + action assistant dry-run.
+**Total tool + model spend: ₹0.
